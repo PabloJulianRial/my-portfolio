@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="./styles/main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main>
@@ -31,31 +34,87 @@
       </header>
 
       <section class="about">
-        <h1 class="about__title">About</h1>
-        <img src="./assets/me.jpg" alt="my-portrait" class="about__image about__image--mobile" />
-        <p class="about__text">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
-          enim natus suscipit aperiam perferendis. Ipsum ipsam adipisci
-          suscipit. Voluptates, cumque, consectetur atque blanditiis fugit
-          laudantium facere cupiditate impedit natus vitae non nobis sunt
-          excepturi, neque sint quidem quo delectus consequatur suscipit.
-          Repellat consectetur magni doloribus quidem? Aspernatur molestiae iste
-          id.
-        </p>
-        <p class="about__text">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
-          enim natus suscipit aperiam perferendis. Ipsum ipsam adipisci
-          suscipit. Voluptates, cumque, consectetur atque blanditiis fugit
-          laudantium facere cupiditate impedit natus vitae non nobis sunt
-          excepturi, neque sint quidem quo delectus consequatur suscipit.
-          Repellat consectetur magni doloribus quidem? Aspernatur molestiae iste
-          id.
-        </p>
-        <img src="./assets/me.jpg" alt="my-portrait" class="about__image about__image--desktop" />
+        <div class="about__details">
+          <h1 class="about__title">About</h1>
+          <img
+            src="./assets/me.jpg"
+            alt="my-portrait"
+            class="about__image about__image--mobile"
+          />
+          <p class="about__text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
+            enim natus suscipit aperiam perferendis. Ipsum ipsam adipisci
+            suscipit. Voluptates, cumque, consectetur atque blanditiis fugit
+            laudantium facere cupiditate impedit natus vitae non nobis sunt
+            excepturi, neque sint quidem quo delectus consequatur suscipit.
+            Repellat consectetur magni doloribus quidem? Aspernatur molestiae
+            iste id.
+          </p>
+          <p class="about__text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
+            enim natus suscipit aperiam perferendis. Ipsum ipsam adipisci
+            suscipit. Voluptates, cumque, consectetur atque blanditiis fugit
+            laudantium facere cupiditate impedit natus vitae non nobis sunt
+            excepturi, neque sint quidem quo delectus consequatur suscipit.
+            Repellat consectetur magni doloribus quidem? Aspernatur molestiae
+            iste id.
+          </p>
+        </div>
+        <img
+          src="./assets/me.jpg"
+          alt="my-portrait"
+          class="about__image about__image--desktop"
+        />
       </section>
+      <section class="skills">
+        <div class="skills__details">
+            <h2 class="skills__title">SKILLS</h2>
+            <p class="skills__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias aliquam obcaecati commodi, temporibus rerum doloribus asperiores explicabo exercitationem, tempora provident esse laborum libero recusandae.</p>
+        </div>
+        <div class="skills__images">
+            <div class="skills__image">
+                
+                <img src="./assets/Git.svg" alt="Git" class="skills__icon">
+                <p class="skills__name">Git</p>
+            </div>
+            <div class="skills__image">
+                <img src="./assets/HTML.svg" alt="HTML" class="skills__icon">
+                <p class="skills__name">HTML</p>
+            </div>
+            <div class="skills__image">
+                <img src="./assets/CSS.svg" alt="CSS" class="skills__icon">
+                <p class="skills__name">CSS</p>
+            </div>
+            <div class="skills__image">
+                <img src="./assets/JS.svg" alt="JavaScript" class="skills__icon">
+                <p class="skills__name">JavaScript</p>
+            </div>
+            <div class="skills__image">
+                <img src="./assets/SCSS.svg" alt="SCSS" class="skills__icon">
+                <p class="skills__name">SCSS</p>
+            </div>
+            <div class="skills__image">
+                <img src="./assets/BEM.svg" alt="BEM" class="skills__icon">
+                <p class="skills__name">BEM</p>
+            </div>
+            <div class="skills__image">
+                <img src="./assets/react.svg" alt="react" class="skills__icon">
+                <p class="skills__name">React</p>
+            </div>
+            <div class="skills__image">
+                <img src="./assets/java.svg" alt="java" class="skills__icon">
+                <p class="skills__name">Java</p>
+            </div>
+            <div class="skills__image">
+                <img src="./assets/spring-boot.svg" alt="Spring Boot" class="skills__icon">
+                <p class="skills__name">Spring Boot</p>
+            </div>
+        </div>
+      </section>
+      <h1 class="portfolio-title">PORTFOLIO</h1>      
       <section class="portfolio">
-        <h1 class="portfolio__title">PORTFOLIO</h1>
-        <div class="project">
+        
+        <div class="project project__1">
           <img
             src="./assets/rectangle.png"
             class="project__img"
@@ -64,63 +123,131 @@
           <div class="project__foot">
             <h1 class="project__title">PROJECT 1</h1>
             <div class="project__icons">
-              <img
-                src="./assets/eye-regular.svg"
+              <a href="#"><img
+                src="./assets/eye.svg"
                 alt="eye"
                 class="project__icon"
-              />
-              <img
-                src="./assets/code-solid.svg"
+              /></a>
+              <a href="#"><img
+                src="./assets/code.svg"
                 alt="code"
                 class="project__icon"
-              />
+              /></a>
             </div>
           </div>
         </div>
-        <div class="project">
-          <img
-            src="./assets/rectangle.png"
-            class="project__img"
-            alt="project-1"
-          />
-          <div class="project__foot">
-            <h1 class="project__title">PROJECT 2</h1>
-            <div class="project__icons">
-              <img
-                src="./assets/eye-regular.svg"
-                alt="eye"
-                class="project__icon"
-              />
-              <img
-                src="./assets/code-solid.svg"
-                alt="code"
-                class="project__icon"
-              />
+        <div class="project project__2">
+            <img
+              src="./assets/rectangle.png"
+              class="project__img"
+              alt="project-1"
+            />
+            <div class="project__foot">
+              <h1 class="project__title">PROJECT 2</h1>
+              <div class="project__icons">
+                <a href="#"><img
+                  src="./assets/eye.svg"
+                  alt="eye"
+                  class="project__icon"
+                /></a>
+                <a href="#"><img
+                  src="./assets/code.svg"
+                  alt="code"
+                  class="project__icon"
+                /></a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="project">
-          <img
-            src="./assets/rectangle.png"
-            class="project__img"
-            alt="project-1"
-          />
-          <div class="project__foot">
-            <h1 class="project__title">PROJECT 3</h1>
-            <div class="project__icons">
-              <img
-                src="./assets/eye-regular.svg"
-                alt="eye"
-                class="project__icon"
-              />
-              <img
-                src="./assets/code-solid.svg"
-                alt="code"
-                class="project__icon"
-              />
+          <div class="project project__3">
+            <img
+              src="./assets/rectangle.png"
+              class="project__img"
+              alt="project-1"
+            />
+            <div class="project__foot">
+              <h1 class="project__title">PROJECT 3</h1>
+              <div class="project__icons">
+                <a href="#"><img
+                  src="./assets/eye.svg"
+                  alt="eye"
+                  class="project__icon"
+                /></a>
+                <a href="#"><img
+                  src="./assets/code.svg"
+                  alt="code"
+                  class="project__icon"
+                /></a>
+              </div>
             </div>
+            </div>
+            <!-- desktop projects---- hide -->
+            <div class="project project--hide project__4">
+                <img
+                  src="./assets/rectangle.png"
+                  class="project__img"
+                  alt="project-1"
+                />
+                <div class="project__foot">
+                  <h1 class="project__title">PROJECT 4</h1>
+                  <div class="project__icons">
+                    <a href="#"><img
+                      src="./assets/eye.svg"
+                      alt="eye"
+                      class="project__icon"
+                    /></a>
+                    <a href="#"><img
+                      src="./assets/code.svg"
+                      alt="code"
+                      class="project__icon"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              <div class="project project--hide project__5">
+                  <img
+                    src="./assets/rectangle.png"
+                    class="project__img"
+                    alt="project-1"
+                  />
+                  <div class="project__foot">
+                    <h1 class="project__title">PROJECT 5</h1>
+                    <div class="project__icons">
+                      <a href="#"><img
+                        src="./assets/eye.svg"
+                        alt="eye"
+                        class="project__icon"
+                      /></a>
+                      <a href="#"><img
+                        src="./assets/code.svg"
+                        alt="code"
+                        class="project__icon"
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="project project--hide project__6">
+                  <img
+                    src="./assets/rectangle.png"
+                    class="project__img"
+                    alt="project-1"
+                  />
+                  <div class="project__foot">
+                    <h1 class="project__title">PROJECT 6</h1>
+                    <div class="project__icons">
+                      <a href="#"><img
+                        src="./assets/eye.svg"
+                        alt="eye"
+                        class="project__icon"
+                      /></a>
+                      <a href="#"><img
+                        src="./assets/code.svg"
+                        alt="code"
+                        class="project__icon"
+                      /></a>
+                    </div>
+                  </div>
+                </div>
           </div>
-        </div>
       </section>
       <section class="contact">
         <h1 class="contact__title">Get in touch</h1>
