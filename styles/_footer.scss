@@ -1,5 +1,5 @@
-@use "./styles/_variables.scss" as *;
-footer{
+@use "./_variables.scss" as *;
+.footer{
     margin-top: auto;
     width: 100%;
     display: flex;
@@ -7,7 +7,7 @@ footer{
     background-color: $primary-color;
     padding: 1rem;
     
-        img{
+        &__img{
             width: 20px;
         }
     

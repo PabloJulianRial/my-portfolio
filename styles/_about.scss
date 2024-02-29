@@ -1,13 +1,20 @@
-@use "./styles/_variables.scss" as *;
+@use "./_variables.scss" as *;
 .about{
-    h1{
+    
+    &__title{
         margin-bottom: 3rem;
+        font-size: 40px;
     }
-    img{
+    &__image{
         width: 85vw;
+        max-width: min-content;
+        
         margin-bottom: 3rem;
+        &--desktop{
+            display: none;
+        }
     }
-    p{
+    &__text{
         width: 85vw;
         margin-bottom: 3rem;
     }

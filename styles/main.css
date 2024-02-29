@@ -1,8 +1,16 @@
-.project .project-img {
+.project {
+  margin-top: 2rem;
+}
+.project__foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.project__img {
   width: 85vw;
   margin-bottom: 1rem;
 }
-.project .icons img {
+.project__icons img {
   width: 20px;
   height: 20px;
   border: 1px solid black;
@@ -10,13 +18,7 @@
   padding: 3px;
 }
 
-.project-foot {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
-
-footer {
+.footer {
   margin-top: auto;
   width: 100%;
   display: flex;
@@ -24,7 +26,7 @@ footer {
   background-color: rgb(68, 110, 219);
   padding: 1rem;
 }
-footer img {
+.footer__img {
   width: 20px;
 }
 
@@ -32,12 +34,13 @@ footer img {
   margin-bottom: 4rem;
   width: 85vw;
 }
-.contact h1 {
-  font-size: 80px;
+.contact__title {
+  font-size: 70px;
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
+  margin-top: 4rem;
 }
-.contact button {
+.contact__button {
   display: block;
   padding: 1rem 4rem;
   margin: 0 auto;
@@ -45,59 +48,111 @@ footer img {
   color: white;
 }
 
-.about h1 {
+.about__title {
   margin-bottom: 3rem;
+  font-size: 40px;
 }
-.about img {
+.about__image {
   width: 85vw;
+  max-width: -moz-min-content;
+  max-width: min-content;
   margin-bottom: 3rem;
 }
-.about p {
+.about__image--desktop {
+  display: none;
+}
+.about__text {
   width: 85vw;
   margin-bottom: 3rem;
 }
 
-@media screen and (min-width: 1440px) {
-  nav {
-    display: flex;
-  }
-  nav .nav-links {
-    display: unset;
-  }
-}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+p {
+  font-family: roboto;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  word-spacing: 4px;
+}
+
 h1 {
   color: rgb(10, 37, 106);
+  font-family: monospace;
 }
 
 body {
-  padding: 2rem;
   background-color: rgb(180, 194, 232);
 }
 
-nav .nav-links {
+main {
+  padding: 2rem;
+}
+
+.nav__links {
   display: none;
 }
-nav h1 {
+.nav__title {
   font-size: 30px;
   text-align: center;
   margin-bottom: 3rem;
 }
 
-header h1 {
-  font-size: 60px;
+.header__title {
+  font-size: 40px;
   margin-bottom: 3rem;
 }
-header p {
+.header__text {
   width: 85vw;
   margin-bottom: 3rem;
 }
 
-.portfolio h1 {
+.portfolio__title {
   margin-bottom: 2rem;
+  font-size: 30px;
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    padding: 5rem;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav__title {
+    font-size: 50px;
+  }
+  .nav__links {
+    display: unset;
+  }
+  .nav__link {
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 2rem;
+    font-size: 30px;
+    color: rgb(10, 37, 106);
+  }
+  .nav__link:hover {
+    color: rgb(68, 110, 219);
+  }
+  .header {
+    margin-bottom: 4rem;
+  }
+  .header__title {
+    text-align: center;
+  }
+  .header__text {
+    text-align: start;
+    max-width: 50%;
+  }
+  .about__image--mobile {
+    display: none;
+  }
+  .about__image--desktop {
+    display: unset;
+  }
 }/*# sourceMappingURL=main.css.map */

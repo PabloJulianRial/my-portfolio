@@ -1,13 +1,14 @@
-@use "./styles/_variables.scss" as *;
+@use "./_variables.scss" as *;
 .contact{
     margin-bottom: 4rem;
     width: 85vw;
-    h1{
-        font-size: 80px;
+    &__title{
+        font-size: 70px;
         text-align: center;
-        margin-bottom: 4rem;
+        margin-bottom: 3rem;
+        margin-top: 4rem;
     }
-    button{
+    &__button{
         display: block;
         padding: 1rem 4rem;
         margin: 0 auto;

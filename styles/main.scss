@@ -1,50 +1,108 @@
-@use "./styles/_project.scss";
-@use "./styles/_footer.scss";
-@use "./styles/_contact.scss";
-@use "./styles/_about.scss";
-@use "./styles/_media-queries.scss";
-@use "./styles/_variables.scss" as *;
+@use "./_project.scss";
+@use "./_footer.scss";
+@use "./_contact.scss";
+@use "./_about.scss";
+@use "./_variables.scss" as *;
 
 *{
    margin: 0;
    padding: 0;
    box-sizing: border-box; 
 }
+p{
+    font-family: roboto;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    word-spacing: 4px;
+}
 h1{
     color: $secondary-color;
+    font-family: monospace;
 }
 body{
-    padding: 2rem;
+   
     background-color: $tertiary-color;
 }
+main{
+    padding: 2rem;
+}
 
-nav{
-    .nav-links{
+.nav{
+    &__links{
         
             display: none;
         
     }
-    h1{
+    &__title{
         font-size: 30px;
         text-align: center;
         margin-bottom: 3rem;
     }
 }
-header{
-    h1{
-        font-size: 60px;
+.header{
+    &__title{
+        font-size: 40px;
         margin-bottom: 3rem;
     }
-    p{
+    &__text{
         width: 85vw;
         margin-bottom: 3rem;
     }
 }
 
 .portfolio{
-    h1{
+    &__title{
         margin-bottom: 2rem;
+        font-size: 30px;
     }
    
 }
 
+//--------------- Media queries desktop -----------------------------------//
+
+@media screen and (min-width: 1440px) {
+    body{
+        padding: 5rem;
+    }
+    .nav {
+        &__title{
+            font-size: 50px;
+        }
+      display: flex;
+      justify-content: space-between;
+      &__links {
+        display: unset;
+      }
+      &__link{
+        
+        text-decoration: none;
+        font-weight: 700;
+        margin-left: 2rem;
+        font-size: 30px;
+        color: $secondary-color;
+        &:hover{
+            color: $primary-color;
+        }
+      }
+
+    }
+    .header{
+        margin-bottom: 4rem;
+        &__title{
+            text-align: center;
+        }
+        &__text{
+            text-align: start;
+            max-width: 50%;
+        }
+    }
+    .about{
+        &__image--mobile{
+            display: none;
+        }
+        &__image--desktop{
+            display: unset;
+        }
+    }
+  }
+  
