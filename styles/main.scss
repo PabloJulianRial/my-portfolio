@@ -1,0 +1,50 @@
+@use "./styles/_project.scss";
+@use "./styles/_footer.scss";
+@use "./styles/_contact.scss";
+@use "./styles/_about.scss";
+@use "./styles/_media-queries.scss";
+@use "./styles/_variables.scss" as *;
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
+h1{
+    color: $secondary-color;
+}
+body{
+    padding: 2rem;
+    background-color: $tertiary-color;
+}
+
+nav{
+    .nav-links{
+        
+            display: none;
+        
+    }
+    h1{
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+}
+header{
+    h1{
+        font-size: 60px;
+        margin-bottom: 3rem;
+    }
+    p{
+        width: 85vw;
+        margin-bottom: 3rem;
+    }
+}
+
+.portfolio{
+    h1{
+        margin-bottom: 2rem;
+    }
+   
+}
+

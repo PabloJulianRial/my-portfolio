@@ -1,0 +1,103 @@
+.project .project-img {
+  width: 85vw;
+  margin-bottom: 1rem;
+}
+.project .icons img {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.project-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+footer {
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(68, 110, 219);
+  padding: 1rem;
+}
+footer img {
+  width: 20px;
+}
+
+.contact {
+  margin-bottom: 4rem;
+  width: 85vw;
+}
+.contact h1 {
+  font-size: 80px;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.contact button {
+  display: block;
+  padding: 1rem 4rem;
+  margin: 0 auto;
+  background-color: rgb(68, 110, 219);
+  color: white;
+}
+
+.about h1 {
+  margin-bottom: 3rem;
+}
+.about img {
+  width: 85vw;
+  margin-bottom: 3rem;
+}
+.about p {
+  width: 85vw;
+  margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 1440px) {
+  nav {
+    display: flex;
+  }
+  nav .nav-links {
+    display: unset;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: rgb(10, 37, 106);
+}
+
+body {
+  padding: 2rem;
+  background-color: rgb(180, 194, 232);
+}
+
+nav .nav-links {
+  display: none;
+}
+nav h1 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+header h1 {
+  font-size: 60px;
+  margin-bottom: 3rem;
+}
+header p {
+  width: 85vw;
+  margin-bottom: 3rem;
+}
+
+.portfolio h1 {
+  margin-bottom: 2rem;
+}/*# sourceMappingURL=main.css.map */

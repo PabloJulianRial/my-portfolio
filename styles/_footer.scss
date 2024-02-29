@@ -1,0 +1,14 @@
+@use "./styles/_variables.scss" as *;
+footer{
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: $primary-color;
+    padding: 1rem;
+    
+        img{
+            width: 20px;
+        }
+    
+}

@@ -1,0 +1,14 @@
+@use "./styles/_variables.scss" as *;
+.about{
+    h1{
+        margin-bottom: 3rem;
+    }
+    img{
+        width: 85vw;
+        margin-bottom: 3rem;
+    }
+    p{
+        width: 85vw;
+        margin-bottom: 3rem;
+    }
+}
