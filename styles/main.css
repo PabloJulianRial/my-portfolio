@@ -2,6 +2,7 @@
   margin-top: 2rem;
 }
 .project__foot {
+  width: 85vw;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -17,17 +18,26 @@
   border-radius: 50%;
   padding: 3px;
 }
+.project__tech {
+  display: none;
+}
 
 .footer {
   margin-top: auto;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   background-color: rgb(68, 110, 219);
   padding: 1rem;
 }
 .footer__img {
   width: 20px;
+}
+.footer__links {
+  width: 30vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
 }
 
 .contact {
@@ -123,7 +133,7 @@ main {
 }
 
 @media screen and (min-width: 1440px) {
-  body {
+  main {
     padding: 5rem;
     padding-top: 2rem;
   }
@@ -198,6 +208,9 @@ main {
     width: 60vw;
     margin: 0 auto;
   }
+  .skills__icon * {
+    fill: red;
+  }
   .skills__image {
     vertical-align: top;
     display: inline-block;
@@ -259,7 +272,7 @@ main {
     grid-row-end: 3;
   }
   .portfolio .project__foot {
-    width: 95%;
+    width: 88%;
     height: 20px;
   }
   .project--hide {
@@ -268,5 +281,14 @@ main {
   }
   .project__img {
     width: 27vw;
+  }
+  .project__tech {
+    margin-top: 2rem;
+    display: unset;
+    display: flex;
+  }
+  .project__tech__p {
+    margin-right: 1rem;
+    font-weight: 500;
   }
 }/*# sourceMappingURL=main.css.map */

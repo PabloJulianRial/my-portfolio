@@ -2,6 +2,7 @@
 .project{
     margin-top: 2rem;
     &__foot{
+        width: 85vw;
         display: flex;
         justify-content: space-between;
         align-items: baseline;
@@ -19,5 +20,8 @@
             padding: 3px;
         }
         
+    }
+    &__tech{
+        display: none;
     }
 }

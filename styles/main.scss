@@ -66,7 +66,7 @@ main {
 //--------------- Media queries desktop -----------------------------------//
 
 @media screen and (min-width: 1440px) {
-  body {
+  main {
     padding: 5rem;
     padding-top: 2rem;
   }
@@ -141,6 +141,10 @@ margin-bottom: 1rem;
       width: 60vw;
       margin: 0 auto;
     }
+
+    &__icon *{
+        fill: red;
+    }
     &__image {
       vertical-align: top;
       display: inline-block;
@@ -205,7 +209,7 @@ margin-bottom: 1rem;
         grid-row-end: 3;
     }
     .project__foot{
-        width: 95%;
+        width: 88%;
         height: 20px;
     }
 
@@ -217,6 +221,15 @@ margin-bottom: 1rem;
 .project{
     &__img{
         width: 27vw;
+    }
+    &__tech{
+        margin-top: 2rem;
+        display:unset;
+        display: flex;
+        &__p{
+            margin-right: 1rem;
+            font-weight: 500;
+        }
     }
 }
 }
