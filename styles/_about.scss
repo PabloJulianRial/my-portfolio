@@ -1,21 +1,42 @@
 @use "./_variables.scss" as *;
-.about{
-    
-    &__title{
-        margin-bottom: 3rem;
-        font-size: 40px;
+.about {
+  &__title {
+    margin-bottom: 3rem;
+    font-size: 40px;
+  }
+  &__image {
+    width: 85vw;
+    max-width: min-content;
+
+    margin-bottom: 3rem;
+    &--desktop {
+      display: none;
     }
-    &__image{
-        width: 85vw;
-        max-width: min-content;
-        
-        margin-bottom: 3rem;
-        &--desktop{
-            display: none;
-        }
+  }
+  &__text {
+    width: 85vw;
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about {
+    &__image--desktop {
+      max-width: 300px;
     }
-    &__text{
-        width: 85vw;
-        margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    &__image--mobile {
+      display: none;
     }
+    &__image--desktop {
+      display: unset;
+    }
+    &__details {
+      width: 50%;
+    }
+    &__text {
+      width: 100%;
+    }
+  }
 }

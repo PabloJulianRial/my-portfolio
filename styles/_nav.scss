@@ -1,0 +1,36 @@
+@use "./_variables.scss" as *;
+
+.nav {
+  &__links {
+    display: none;
+  }
+  &__title {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .nav {
+    align-items: baseline;
+    &__title {
+      font-size: 50px;
+    }
+    display: flex;
+    justify-content: space-between;
+    &__links {
+      display: unset;
+    }
+    &__link {
+      text-decoration: none;
+
+      margin-left: 2rem;
+      font-size: 30px;
+      color: $secondary-color;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}

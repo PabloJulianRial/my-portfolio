@@ -1,0 +1,62 @@
+@use "./_variables.scss" as *;
+
+.portfolio {
+  &__title {
+    margin-bottom: 2rem;
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .portfolio-title {
+    margin-top: 3rem;
+    font-size: 50px;
+  }
+  .portfolio {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    .project__1 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+    .project__2 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+    .project__3 {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+    .project__4 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+    .project__5 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+    .project__6 {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+    .project__foot {
+      width: 88%;
+      height: 20px;
+    }
+  }
+}

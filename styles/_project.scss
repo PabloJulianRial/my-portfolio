@@ -1,27 +1,43 @@
 @use "./_variables.scss" as *;
-.project{
-    margin-top: 2rem;
-    &__foot{
-        width: 85vw;
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
+.project {
+  margin-top: 2rem;
+  &__foot {
+    width: 85vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  &__img {
+    width: 85vw;
+    margin-bottom: 1rem;
+  }
+  &__icons {
+    img {
+      width: 20px;
+      height: 20px;
+      border: 1px solid black;
+      border-radius: 50%;
+      padding: 3px;
     }
-    &__img{
-        width: 85vw;
-        margin-bottom: 1rem;
+  }
+  &__tech {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .project {
+    &__img {
+      width: 27vw;
     }
-    &__icons{
-        img{
-            width: 20px;
-            height: 20px;
-            border: 1px solid black;
-            border-radius: 50%;
-            padding: 3px;
-        }
-        
+    &__tech {
+      margin-top: 2rem;
+      display: unset;
+      display: flex;
+      &__p {
+        margin-right: 1rem;
+        font-weight: 500;
+      }
     }
-    &__tech{
-        display: none;
-    }
+  }
 }
