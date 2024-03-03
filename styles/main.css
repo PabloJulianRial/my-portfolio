@@ -283,7 +283,7 @@ h1 {
 }
 
 body {
-  background-color: rgb(180, 194, 232);
+  background-image: radial-gradient(circle, rgb(180, 194, 232), rgb(114, 58, 157));
 }
 
 main {

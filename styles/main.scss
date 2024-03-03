@@ -24,7 +24,14 @@ h1 {
   color: $secondary-color;
 }
 body {
-  background-color: $tertiary-color;
+ 
+  
+    background-image: radial-gradient(circle, rgb(180, 194, 232), rgb(114, 58, 157));
+  
+  // background-image: url("../assets/background-2.png");
+  // background-size: cover;
+  // background-position: center;
+  // background-repeat: no-repeat;
 }
 main {
   padding: 2rem;
