@@ -1,19 +1,24 @@
 @use "./_variables.scss" as *;
 .footer {
   margin-top: auto;
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: center;
   background-color: $primary-color-6;
   padding: 1rem;
 
   &__img {
-    width: 20px;
+    width: 30px;
   }
   &__links {
     width: 30vw;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .footer__img {
+    width: 50px;
   }
 }

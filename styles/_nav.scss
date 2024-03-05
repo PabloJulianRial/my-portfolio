@@ -24,12 +24,13 @@
     }
     &__link {
       text-decoration: none;
-
+      font-weight: 900;
       margin-left: 2rem;
       font-size: 30px;
       color: $primary-color-1;
       &:hover {
         color: $primary-color-3;
+        transition: color 0.3s ease;
       }
     }
   }

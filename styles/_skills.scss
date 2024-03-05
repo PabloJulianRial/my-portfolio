@@ -15,9 +15,10 @@
       color: $primary-color-1;
     }
     &__skills-title {
-      width: 20vw;
+      width: 20%;
     }
     &__details {
+      width: 80%;
       display: flex;
       justify-content: space-evenly;
     }
@@ -27,16 +28,16 @@
       align-items: baseline;
       width: 50vw;
       margin: 0 auto;
+      margin-top: 3rem;
     }
     &__text {
       max-width: 60%;
-      margin-right: 10rem;
     }
 
     &__icon * {
-      fill: $secondary-color-2;
+      transition: color 0.4s ease;
       &:hover {
-        fill: $secondary-color-3;
+        fill: $secondary-color-2;
       }
     }
     &__image {
@@ -51,8 +52,8 @@
     }
     &__name {
       text-align: center;
-      font-size: 12px;
-      font-weight: 600;
+      font-size: 15px;
+      font-weight: 900;
     }
   }
 }

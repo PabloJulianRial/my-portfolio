@@ -24,8 +24,11 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .project__foot {
+    width: 100%;
+  }
   .project__img {
-    width: 27vw;
+    width: 100%;
     height: 18vw;
   }
   .project__tech {
@@ -39,14 +42,14 @@
 }
 .footer {
   margin-top: auto;
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: center;
   background-color: hsl(45, 90%, 88%);
   padding: 1rem;
 }
 .footer__img {
-  width: 20px;
+  width: 30px;
 }
 .footer__links {
   width: 30vw;
@@ -55,9 +58,14 @@
   justify-content: space-around;
 }
 
+@media screen and (min-width: 1440px) {
+  .footer__img {
+    width: 50px;
+  }
+}
 .contact {
   margin-bottom: 4rem;
-  width: 85vw;
+  width: 100%;
 }
 .contact__title {
   font-size: 70px;
@@ -66,13 +74,26 @@
   margin-top: 4rem;
 }
 .contact__button {
+  text-align: center;
+  max-width: 55%;
   display: block;
   padding: 1rem 4rem;
   margin: 0 auto;
   background-color: hsl(43, 77%, 27%);
   color: white;
+  transition: background-color 0.4s ease;
+}
+.contact__button:hover {
+  background-color: hsl(43, 86%, 17%);
 }
 
+@media screen and (min-width: 1440px) {
+  .contact__button {
+    max-width: 400px;
+    font-size: 2rem;
+    color: hsl(43, 90%, 76%);
+  }
+}
 .about__title {
   margin-bottom: 3rem;
   font-size: 40px;
@@ -131,9 +152,10 @@
     color: hsl(43, 86%, 17%);
   }
   .skills__skills-title {
-    width: 20vw;
+    width: 20%;
   }
   .skills__details {
+    width: 80%;
     display: flex;
     justify-content: space-evenly;
   }
@@ -143,16 +165,16 @@
     align-items: baseline;
     width: 50vw;
     margin: 0 auto;
+    margin-top: 3rem;
   }
   .skills__text {
     max-width: 60%;
-    margin-right: 10rem;
   }
   .skills__icon * {
-    fill: hsl(209, 34%, 30%);
+    transition: color 0.4s ease;
   }
   .skills__icon *:hover {
-    fill: hsl(209, 28%, 39%);
+    fill: hsl(209, 34%, 30%);
   }
   .skills__image {
     vertical-align: top;
@@ -166,8 +188,8 @@
   }
   .skills__name {
     text-align: center;
-    font-size: 12px;
-    font-weight: 600;
+    font-size: 15px;
+    font-weight: 900;
   }
 }
 .header {
@@ -219,12 +241,14 @@
   }
   .nav__link {
     text-decoration: none;
+    font-weight: 900;
     margin-left: 2rem;
     font-size: 30px;
     color: hsl(43, 86%, 17%);
   }
   .nav__link:hover {
     color: hsl(42, 63%, 48%);
+    transition: color 0.3s ease;
   }
 }
 .portfolio__title {
@@ -242,6 +266,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
   }
   .portfolio .project__1 {
     grid-column-start: 1;
@@ -280,7 +306,6 @@
     grid-row-end: 3;
   }
   .portfolio .project__foot {
-    width: 88%;
     height: 20px;
   }
 }
@@ -288,12 +313,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Signika Negative", sans-serif;
+  font-family: "Cormorant Garamond", serif;
   text-decoration: none;
 }
 
 p {
   color: hsl(209, 34%, 30%);
+  font-weight: 1000;
+  font-size: 1.5rem;
   letter-spacing: 1.5px;
   word-spacing: 4px;
 }

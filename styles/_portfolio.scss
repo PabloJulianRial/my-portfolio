@@ -17,6 +17,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    column-gap: 40px;
 
     .project__1 {
       grid-column-start: 1;
@@ -55,7 +56,6 @@
       grid-row-end: 3;
     }
     .project__foot {
-      width: 88%;
       height: 20px;
     }
   }

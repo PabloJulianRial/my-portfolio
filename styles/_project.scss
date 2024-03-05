@@ -30,8 +30,11 @@
 
 @media screen and (min-width: 1440px) {
   .project {
+    &__foot{
+      width: 100%;
+    }
     &__img {
-      width: 27vw;
+      width: 100%;
       height: calc(27vw / 1.5);
     }
     &__tech {

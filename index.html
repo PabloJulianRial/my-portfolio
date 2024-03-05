@@ -7,7 +7,7 @@
     <script src="https://kit.fontawesome.com/564b9e19e0.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.css" />
     
   </head>
@@ -15,6 +15,7 @@
     <main>
       <nav class="nav">
         <h1 class="nav__title">Pablo Rial</h1>
+        <div class="underline underline__name"></div>
         <div class="nav__links">
           <a href="#about" class="nav__link">About</a>
           <a href="#projects" class="nav__link">Projects</a>
@@ -23,40 +24,24 @@
       </nav>
       <header class="header">
         <h1 class="header__title">Junior Software Developer.</h1>
+        <div class="underline underline__title"></div>
         <p class="header__text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-          officiis necessitatibus aliquam laudantium qui reprehenderit ea
-          maiores dolorem fugit. Reprehenderit veniam sit, cupiditate dolore
-          natus magnam nulla quia ex necessitatibus adipisci saepe corporis
-          eveniet debitis fugiat ab facere. Repellendus, ad?
-        </p>
+          Greetings and welcome to my portfolio! I am Pablo, a recent graduate of _nology's consultancy program . Throughout my academic journey, I have acquired a solid foundation in software development principles, honed my problem-solving skills, and gained proficiency in various programming languages and technologies.        </p>
       </header>
 
       <section class="about" id="about">
         <div class="about__details">
           <h1 class="about__title">About</h1>
+          
           <img
             src="./assets/me.jpg"
             alt="my-portrait"
             class="about__image about__image--mobile"
           />
           <p class="about__text">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
-            enim natus suscipit aperiam perferendis. Ipsum ipsam adipisci
-            suscipit. Voluptates, cumque, consectetur atque blanditiis fugit
-            laudantium facere cupiditate impedit natus vitae non nobis sunt
-            excepturi, neque sint quidem quo delectus consequatur suscipit.
-            Repellat consectetur magni doloribus quidem? Aspernatur molestiae
-            iste id.
-          </p>
+            As an aspiring software developer, I am deeply passionate about leveraging technology to solve real-world problems and create innovative solutions. I thrive in dynamic environments where creativity and collaboration intersect, and I am committed to continuously learning and growing in this ever-evolving field.          </p>
           <p class="about__text">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
-            enim natus suscipit aperiam perferendis. Ipsum ipsam adipisci
-            suscipit. Voluptates, cumque, consectetur atque blanditiis fugit
-            laudantium facere cupiditate impedit natus vitae non nobis sunt
-            excepturi, neque sint quidem quo delectus consequatur suscipit.
-            Repellat consectetur magni doloribus quidem? Aspernatur molestiae
-            iste id.
+            I am an eager and enthusiastic learner constantly seeking to broaden my horizons within the field of software development. My academic voyage instilled in me a robust foundation encompassing software engineering principles, data structures, algorithms, and a medley of programming languages and technologies. I am poised at the cusp of embarking on an exhilarating professional trajectory, brimming with enthusiasm to apply my burgeoning knowledge and skills towards tangible, real-world projects. My journey thus far has been a testament to my unwavering commitment to continuous learning and growth, a trajectory I am fervently intent on perpetuating.
           </p>
         </div>
         <img
@@ -68,8 +53,9 @@
       <section class="skills">
         <div class="skills__details">
             <h2 class="skills__title">SKILLS</h2>
-            <p class="skills__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias aliquam obcaecati commodi, temporibus rerum doloribus asperiores explicabo exercitationem, tempora provident esse laborum libero recusandae.</p>
-        </div>
+            
+            <p class="skills__text">
+              I possess a diverse set of technical skills, including proficiency in programming languages such as Java, Python, and JavaScript, as well as experience with frameworks like React.js and Node.js. Additionally, I am adept at database management, version control using Git, and agile methodologies for efficient project management. </P>        </div>
         <div class="skills__images">
             <div class="skills__image">
                 <svg class="skills__icon" width="68" height="77" viewBox="0 0 68 77" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -173,7 +159,8 @@
             </div>
         </div>
       </section>
-      <h1 class="portfolio-title">PORTFOLIO</h1>      
+      <h1 class="portfolio-title">PORTFOLIO</h1> 
+      <div class="underline underline__portfolio"></div>     
       <section class="portfolio" id="projects">
         
         <div class="project project__1">
@@ -294,7 +281,8 @@
       </section>
       <section class="contact" id="contact">
         <h1 class="contact__title">Get in touch</h1>
-        <button class="contact__button" onclick="window.location.href='contact.html'" >CONTACT</button>
+        <div class="underline underline__contact"></div>
+        <a class="contact__button" href="./contact.html" target="_blank" >CONTACT ME</a>
       </section>
     </main>
     <footer class="footer">
