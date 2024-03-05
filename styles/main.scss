@@ -12,28 +12,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: roboto;
+  font-family: "Signika Negative", sans-serif;
+  text-decoration: none;
 }
 p {
-  font-family: roboto;
+  color: $secondary-color-2;
 
   letter-spacing: 1.5px;
   word-spacing: 4px;
 }
 h1 {
-  color: $secondary-color;
+  color: $primary-color-1;
 }
 body {
- 
-  
-    background-image: radial-gradient(circle, rgb(180, 194, 232), rgb(114, 58, 157));
-  
-  // background-image: url("../assets/background-2.png");
-  // background-size: cover;
-  // background-position: center;
-  // background-repeat: no-repeat;
+  background-color: $primary-color-5;
 }
 main {
+  width: 100vw;
   padding: 2rem;
 }
 
@@ -47,6 +42,7 @@ main {
   main {
     padding: 5rem;
     padding-top: 2rem;
+    max-width: unset;
   }
 
   .project--hide {

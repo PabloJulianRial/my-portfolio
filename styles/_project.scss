@@ -1,4 +1,5 @@
 @use "./_variables.scss" as *;
+
 .project {
   margin-top: 2rem;
   &__foot {
@@ -8,16 +9,18 @@
     align-items: baseline;
   }
   &__img {
+    border: 5px solid $primary-color-3;
     width: 85vw;
+    height: calc(85vw / 1.7);
+
     margin-bottom: 1rem;
   }
   &__icons {
-    img {
-      width: 20px;
-      height: 20px;
-      border: 1px solid black;
-      border-radius: 50%;
-      padding: 3px;
+    &__fa {
+      color: $secondary-color-1;
+      &:hover {
+        color: $secondary-color-3;
+      }
     }
   }
   &__tech {
@@ -29,10 +32,11 @@
   .project {
     &__img {
       width: 27vw;
+      height: calc(27vw / 1.5);
     }
     &__tech {
       margin-top: 2rem;
-      display: unset;
+
       display: flex;
       &__p {
         margin-right: 1rem;

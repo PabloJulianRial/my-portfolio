@@ -6,7 +6,7 @@
   }
   &__title {
     font-size: 30px;
-    text-align: center;
+
     margin-bottom: 3rem;
   }
 }
@@ -27,9 +27,9 @@
 
       margin-left: 2rem;
       font-size: 30px;
-      color: $secondary-color;
+      color: $primary-color-1;
       &:hover {
-        color: $primary-color;
+        color: $primary-color-3;
       }
     }
   }

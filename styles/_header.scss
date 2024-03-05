@@ -1,18 +1,20 @@
 @use "./_variables.scss" as *;
 
 .header {
+  max-width: 600px;
   &__title {
     font-size: 40px;
     margin-bottom: 3rem;
   }
   &__text {
-    width: 85vw;
+    width: 100%;
     margin-bottom: 3rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .header {
+    max-width: unset;
     margin-bottom: 4rem;
     margin-left: 3rem;
     &__title {
@@ -21,7 +23,7 @@
     }
     &__text {
       text-align: start;
-      max-width: 50%;
+      max-width: 60%;
     }
   }
 }

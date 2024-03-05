@@ -4,22 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <script src="https://kit.fontawesome.com/564b9e19e0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
+    
   </head>
   <body>
     <main>
       <nav class="nav">
         <h1 class="nav__title">Pablo Rial</h1>
         <div class="nav__links">
-          <a href="#" class="nav__link">About</a>
-          <a href="#" class="nav__link">Projects</a>
-          <a href="#" class="nav__link">Contact</a>
+          <a href="#about" class="nav__link">About</a>
+          <a href="#projects" class="nav__link">Projects</a>
+          <a href="#contact" class="nav__link">Contact</a>
         </div>
       </nav>
       <header class="header">
@@ -33,7 +32,7 @@
         </p>
       </header>
 
-      <section class="about">
+      <section class="about" id="about">
         <div class="about__details">
           <h1 class="about__title">About</h1>
           <img
@@ -175,7 +174,7 @@
         </div>
       </section>
       <h1 class="portfolio-title">PORTFOLIO</h1>      
-      <section class="portfolio">
+      <section class="portfolio" id="projects">
         
         <div class="project project__1">
           <img
@@ -186,20 +185,14 @@
           <div class="project__foot">
             <h1 class="project__title">PROJECT 1</h1>
             <div class="project__icons">
-              <a href="https://guess-what-aliens.netlify.app/" target="_blank"><img
-                src="./assets/eye.svg"
-                alt="eye"
-                class="project__icon"
-              /></a>
-              <a href="https://github.com/PabloJulianRial/Guess-What" target="_blank"><img
-                src="./assets/code.svg"
-                alt="code"
-                class="project__icon"
-              /></a>
+              <a href="https://guess-what-aliens.netlify.app/" target="_blank"><i class="fa-solid fa-eye project__icons__fa"></i></a>
+              <a href="https://github.com/PabloJulianRial/Guess-What" target="_blank"><i class="fa-solid fa-code project__icons__fa"></i></a>
             </div>
           </div>
           <div class="project__tech">
-            <p class="project__tech__p">React</p>
+            <p class="project__tech__p">Node.js</p>
+            <p class="project__tech__p">MongoDB</p>
+            <p class="project__tech__p">Next.js</p>
             <p class="project__tech__p">SCSS</p>
           </div>
         </div>
@@ -212,21 +205,15 @@
             <div class="project__foot">
               <h1 class="project__title">PROJECT 2</h1>
               <div class="project__icons">
-                <a href="https://nc-news-articles-app.netlify.app/" target="_blank"><img
-                  src="./assets/eye.svg"
-                  alt="eye"
-                  class="project__icon"
-                /></a>
-                <a href="https://github.com/PabloJulianRial/nc-news" target="_blank"><img
-                  src="./assets/code.svg"
-                  alt="code"
-                  class="project__icon"
-                /></a>
+                <a href="https://nc-news-articles-app.netlify.app/" target="_blank"><i class="fa-solid fa-eye project__icons__fa"></i></a>
+                <a href="https://github.com/PabloJulianRial/nc-news" target="_blank"><i class="fa-solid fa-code project__icons__fa"></i></a>
               </div>
             </div>
             <div class="project__tech">
+                <p class="project__tech__p">Node.js</p>
                 <p class="project__tech__p">React</p>
-                <p class="project__tech__p">SCSS</p>
+                <p class="project__tech__p">PSQL</p>
+                <p class="project__tech__p">Bootstrap</p>
               </div>
           </div>
           <div class="project project__3">
@@ -238,21 +225,14 @@
             <div class="project__foot">
               <h1 class="project__title">PROJECT 3</h1>
               <div class="project__icons">
-                <a href="https://vocal-brigadeiros-a1f516.netlify.app/"><img
-                  src="./assets/eye.svg"
-                  alt="eye"
-                  class="project__icon"
-                /></a>
-                <a href="https://github.com/PabloJulianRial/Marketplace"><img
-                  src="./assets/code.svg"
-                  alt="code"
-                  class="project__icon"
-                /></a>
+                <a href="https://vocal-brigadeiros-a1f516.netlify.app/" target="_blank"><i class="fa-solid fa-eye project__icons__fa" ></i></a>
+                <a href="https://github.com/PabloJulianRial/Marketplace" target="_blank"><i class="fa-solid fa-code project__icons__fa"></i></a>
               </div>
             </div>
             <div class="project__tech">
+                <p class="project__tech__p">Node.js</p>
                 <p class="project__tech__p">React</p>
-                <p class="project__tech__p">SCSS</p>
+                <p class="project__tech__p">PSQL</p>
               </div>
             </div>
             <!-- desktop projects---- hide -->
@@ -265,16 +245,8 @@
                 <div class="project__foot">
                   <h1 class="project__title">PROJECT 4</h1>
                   <div class="project__icons">
-                    <a href="#"><img
-                      src="./assets/eye.svg"
-                      alt="eye"
-                      class="project__icon"
-                    /></a>
-                    <a href="#"><img
-                      src="./assets/code.svg"
-                      alt="code"
-                      class="project__icon"
-                    /></a>
+                    <a href="./assets/project-4/index.html" target="_blank"><i class="fa-solid fa-eye project__icons__fa"></i></a>
+                    <a href="https://github.com/PabloJulianRial/fe-form-validation" target="_blank"><i class="fa-solid fa-code project__icons__fa"></i></a>
                   </div>
                 </div>
                 <div class="project__tech">
@@ -291,16 +263,8 @@
                   <div class="project__foot">
                     <h1 class="project__title">PROJECT 5</h1>
                     <div class="project__icons">
-                      <a href="#"><img
-                        src="./assets/eye.svg"
-                        alt="eye"
-                        class="project__icon"
-                      /></a>
-                      <a href="#"><img
-                        src="./assets/code.svg"
-                        alt="code"
-                        class="project__icon"
-                      /></a>
+                      <a href="./assets/project-5/index.html" target="_blank"><i class="fa-solid fa-eye project__icons__fa"></i></a>
+                      <a href="https://github.com/PabloJulianRial/fe-dom-mini-apps" target="_blank"><i class="fa-solid fa-code project__icons__fa"></i></a>
                     </div>
                   </div>
                   <div class="project__tech">
@@ -317,16 +281,8 @@
                   <div class="project__foot">
                     <h1 class="project__title">PROJECT 6</h1>
                     <div class="project__icons">
-                      <a href="#"><img
-                        src="./assets/eye.svg"
-                        alt="eye"
-                        class="project__icon"
-                      /></a>
-                      <a href="#"><img
-                        src="./assets/code.svg"
-                        alt="code"
-                        class="project__icon"
-                      /></a>
+                      <a href="#" target="_blank"><i class="fa-solid fa-eye project__icons__fa"></i></a>
+                      <a href="#" target="_blank"><i class="fa-solid fa-code project__icons__fa"></i></a>
                     </div>
                   </div>
                   <div class="project__tech">
@@ -336,9 +292,9 @@
                 </div>
           </div>
       </section>
-      <section class="contact">
+      <section class="contact" id="contact">
         <h1 class="contact__title">Get in touch</h1>
-        <button class="contact__button">CONTACT</button>
+        <button class="contact__button" onclick="window.location.href='contact.html'" >CONTACT</button>
       </section>
     </main>
     <footer class="footer">
