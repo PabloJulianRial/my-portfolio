@@ -58,21 +58,40 @@ body {
   &__head {
     text-align: center;
     width: 200px;
-    margin: 2rem auto;
+    margin: 0 auto;
     font-size: 30px;
   }
   &__text {
     text-align: center;
+    margin-bottom: 2rem;
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5px;
+    width: 70vw;
+    height: 70vw;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &--logo {
+      width: 70%;
+      height: 70%;
+    }
+    &--name {
+      text-align: center;
+    }
   }
   width: 70vw;
   margin: 4rem auto;
 }
-.portfoio__project__language {
-  font-size: 25px;
-}
 .portfolio {
-  width: 70vw;
-  margin: 4rem auto;
+  width: 75vw;
+  margin: 0 auto;
   &__head {
     text-align: center;
     width: 200px;
@@ -80,21 +99,43 @@ body {
     font-size: 35px;
   }
   &__project {
+    width: 75vw;
+    background-color: rgb(234, 245, 245);
+    margin: 1rem auto;
+    padding: 5vw;
+
     &__language {
-      font-size: 20px;
+      margin-top: 10px;
+      text-align: center;
+      font-size: 18px;
     }
     &__head {
+      text-align: center;
       font-size: 35px;
+      margin-bottom: 10px;
     }
     &__text {
-      width: 70vw;
-      margin: 2rem auto;
+      width: 65vw;
+      margin: 10px auto;
     }
     &__image {
-      width: 300px;
-      height: 200px;
-      overflow: hidden;
-      margin: 2rem auto;
+      width: 65vw;
+      height: 44vw;
+    }
+  }
+  &__project__links {
+    width: 65vw;
+    display: flex;
+    justify-content: space-between;
+    &--code {
+      border: 1px solid black;
+      padding: 3px 30px;
+      border-radius: 5px;
+    }
+    &--preview {
+      border: 1px solid black;
+      padding: 3px 18px;
+      border-radius: 5px;
     }
   }
 }
