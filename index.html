@@ -13,13 +13,15 @@
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
-    <nav class="navbar">
+    <nav class="navbar" id="home">
         <div class="navbar__name">Pablo Rial</div>
-        <div class="navbar__head">👋 Hey! I'm <span>Pablo</span> </div>
+        <div class="navbar__head">👋 Hey! I'm <span>Pablo Rial</span> </div>
         <div class="navbar__links">
-            <a href="#about-me" class="nav__link">About</a>
+            <a href="#home" class="nav__link">Home</a>
+            <a href="#about-me" class="nav__link">About </a>
             <a href="#portfolio" class="nav__link">Projects</a>
-            <a href="./contact.html" class="nav__link">Contact</a>
+            <a href="#skills" class="nav__link">Skills</a>
+            <a href="#contact" class="nav__link">Contact</a>
         </div>
     </nav>
     <header class="header" id="home">
@@ -47,7 +49,7 @@
     </div>
 
     </section>
-    <section class="skills">
+    <section class="skills" id="skills">
         <div class="skills__head">Technical Skills</div>
         <div class="skills__text"> These are some of the tech skills I have on my tool  belt, although one of the most important skills I've gained during my training as a developer is the ability to learn new languages and frameworks in a short space of time using the most relevant and up-to-date documentation available </div>
         <div class="skills__grid">
@@ -101,14 +103,14 @@
         <h2 class="portfolio__head">My Projects</h2>
         <section class="portfolio" id="portfolio">
             <div class="portfolio__project portfolio__project--1">
-                <div class="portfolio__project__head">Space Calculator Project</div>
+                <div class="portfolio__project__head">Space Calculator</div>
                 <div class="portfolio__project__image"><img src="./assets/calculator.png" alt=""></div>
                 <div class="portfolio__project__info">
                     <div class="portfolio__project__language">TypeScript</div>
                     <div class="portfolio__project__text">A browser-based calculator app using modern JavaScript
                         programming techniques and DOM manipulation.
                         
-                        alias!</div>
+                        </div>
                     <div class="portfolio__project__links">
                         <a class="portfolio__project__links--code" href="https://github.com/PabloJulianRial/calculator-waiheke">Code </a>
                         <a class="portfolio__project__links--preview" href="https://pablojulianrial.github.io/calculator-waiheke/">Preview</a>
@@ -131,7 +133,7 @@
                 </div>
             </div>
             <div class="portfolio__project portfolio__project--3">
-                <div class="portfolio__project__head">Guess What? Alien Edition</div>
+                <div class="portfolio__project__head">Guess What? </div>
                 <div class="portfolio__project__image"><img src="./assets/Guess-what.png" alt=""></div>
                 <div class="portfolio__project__info">
                     <div class="portfolio__project__language">JavaScript <span>React</span> MongoDB</div>
@@ -144,21 +146,21 @@
                 </div>
             </div>
             <div class="portfolio__project portfolio__project--4">
-                <div class="portfolio__project__head">Full Stack Project - Recipe Finder</div>
+                <div class="portfolio__project__head">Recipe Finder</div>
                 <div class="portfolio__project__image"><img src="./assets/recipe-finder.png" alt=""></div>
                 <div class="portfolio__project__info">
                     <div class="portfolio__project__language">React <span>Java</span> Spring</div>
-                    <div class="portfolio__project__text">A Spring Boot API served from a MySQL database and a React application the pulls data from it and displays it in a dashboard.
+                    <div class="portfolio__project__text">A Spring Boot API served from a MySQL database and a React application.
                     </div>
-                    <div class="portfolio__project__links">
-                        <a class="portfolio__project__links--code" href="https://github.com/PabloJulianRial/full-stack-project">Code </a>
-                        <a class="portfolio__project__links--preview" href="https://github.com/PabloJulianRial/full-stack-project">Preview</a>
+                </div>
+                <div class="portfolio__project__links">
+                    <a class="portfolio__project__links--code" href="https://github.com/PabloJulianRial/full-stack-project">Code </a>
+                    <a class="portfolio__project__links--preview" href="https://github.com/PabloJulianRial/full-stack-project">Preview</a>
 
-                    </div>
                 </div>
             </div>
             <div class="portfolio__project portfolio__project--5">
-                <div class="portfolio__project__head">Java Game Project</div>
+                <div class="portfolio__project__head">Java Card Games</div>
                 <div class="portfolio__project__image"><img src="./assets/casino.png" alt=""></div>
                 <div class="portfolio__project__info">
                     <div class="portfolio__project__language">Java</div>
@@ -172,14 +174,14 @@
                 </div>
             </div>
             <div class="portfolio__project portfolio__project--6">
-                <div class="portfolio__project__head">Client project "Way of the Viking"</div>
+                <div class="portfolio__project__head">Way of the Viking</div>
                 <div class="portfolio__project__image"><img src="./assets/wov.png" alt=""></div>
                 <div class="portfolio__project__info">
                     <div class="portfolio__project__language">TypeScript  <span>React</span>  </div>
                     <div class="portfolio__project__text">A real-life MVP for a development project, delivered
-                        as a Scrum team to a client who will use it for future development. Using Google Firebase services for data management.
+                        as a Scrum team to a client who will use it for future development.
                         
-                        alias!</div>
+                        </div>
                     <div class="portfolio__project__links">
                         <a class="portfolio__project__links--code" href="https://github.com/PabloJulianRial/wov-client-project">Code </a>
                         <a class="portfolio__project__links--preview" href="https://wov-client-project-66242.web.app/">Preview</a>
@@ -188,7 +190,9 @@
                 </div>
             </div>
         </section> 
-
+<div class="contact" id="contatc">
+    If you have any questions at all, or want to have a friendly chat or even you have a job proposition, please use any of the links below 👇
+</div>
     <footer class="footer">
       <div class="footer__links">
         <a href="https://www.linkedin.com/in/pablo-rial-dev/" target="_blank"
