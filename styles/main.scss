@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Encode;
 }
 
 img {
@@ -13,21 +12,31 @@ img {
 body {
   display: flex;
   flex-direction: column;
+  background-color: rgb(64, 58, 58);
+  color: white;
 }
 span {
   color: rgb(217, 136, 29);
 }
+a:link {
+  transition: 0.2s ease-in-out;
+  color: black;
+}
 a:visited {
-  color: inherit;
+  color: black;
 }
 a:hover {
-  color: rgb(25, 19, 60);
+  color: rgb(217, 136, 29);
 }
 .navbar {
   display: none;
   &__name {
     display: none;
   }
+}
+.nav__link {
+  text-decoration: none;
+  color: black;
 }
 .header {
   width: 80vw;
@@ -66,7 +75,7 @@ a:hover {
   width: 70vw;
   margin: 0 auto;
   &__image {
-    border: 1px solid red;
+    border: 1px solid rgb(217, 136, 29);
     border-radius: 50%;
     width: 250px;
     height: 250px;
@@ -80,6 +89,8 @@ a:hover {
 }
 .skills {
   &__head {
+    color: black;
+    font-weight: 600;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -88,7 +99,7 @@ a:hover {
     width: 200px;
     margin: 0 auto;
     margin-bottom: 1rem;
-    font-size: 30px;
+    font-size: 35px;
   }
   &__text {
     text-align: center;
@@ -101,6 +112,7 @@ a:hover {
     gap: 25px;
   }
   &__item {
+    color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -126,9 +138,11 @@ a:hover {
     text-align: center;
     margin: 1rem auto;
     font-size: 35px;
+    letter-spacing: 2px;
   }
 
   &__project {
+    color: black;
     background-color: rgb(234, 245, 245);
     margin: 1rem auto;
     padding: 5vw;
@@ -138,6 +152,8 @@ a:hover {
     height: 100%;
 
     &__language {
+      display: flex;
+      justify-content: space-around;
       color: rgb(47, 47, 125);
       margin-top: 10px;
       text-align: left;
@@ -204,7 +220,7 @@ a:hover {
   font-size: 2rem;
   text-align: center;
   width: 75vw;
-  background-color: rgb(234, 245, 245);
+  background-color: rgb(64, 58, 58);
   margin: 2rem auto;
   display: none;
 }
@@ -367,7 +383,7 @@ a:hover {
       display: none;
     }
     &__image {
-      border: 1px solid red;
+      border: 1px solid rgb(217, 136, 29);
       border-radius: 3%;
       width: 1250px;
       height: 350px;
