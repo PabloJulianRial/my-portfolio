@@ -190,7 +190,7 @@ a:hover {
 
       &--code {
         border: 1px solid black;
-        padding: 3px 30px;
+        padding: 3px;
         border-radius: 5px;
         transition: 0.3s ease-in-out;
         text-decoration: none;
@@ -203,7 +203,7 @@ a:hover {
 
       &--preview {
         border: 1px solid black;
-        padding: 3px 18px;
+        padding: 40px;
         border-radius: 5px;
         transition: 0.3s ease-in-out;
         text-decoration: none;
@@ -223,6 +223,10 @@ a:hover {
   background-color: rgb(64, 58, 58);
   margin: 2rem auto;
   display: none;
+  &__head {
+    color: black;
+    letter-spacing: 2px;
+  }
 }
 .footer {
   margin-top: auto;
@@ -420,7 +424,7 @@ a:hover {
       &__links > * {
         text-align: center;
         padding: 5px;
-        width: 80px;
+        width: 90px;
       }
     }
     margin-bottom: 20px;
