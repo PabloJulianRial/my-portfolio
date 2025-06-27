@@ -1,21 +1,40 @@
-## Welcome to My Portfolio!
+# 🌐 Personal Web Developer Portfolio
 
-Hello there! 👋 I'm Pablo, a passionate Junior Software Developer dedicated to building innovative and efficient software solutions. This portfolio is a showcase of my journey, featuring projects that highlight my skills in web development, software design, and problem-solving.
+Welcome to my portfolio! This is a simple, clean website that introduces me as an aspiring web developer. It includes links to:
 
-## About Me
+- **About Me** – a brief introduction to who I am
+- **Projects** – a showcase of work I've been building
+- **Contact** – how to get in touch with me
 
-I'm a lifelong learner and a technology enthusiast who loves to explore new tech stacks and improve my coding skills. I strive to create seamless user experiences and scalable projects.
+I'm passionate about building practical, user-focused applications and continuously learning as I transition into the tech industry. This site is my first step into sharing my journey and work with the world.
 
-## Projects
+---
 
-Here, you'll find a selection of projects that I've worked on, demonstrating my ability to design, develop, and deploy applications. Each project includes a brief description, technologies used, and links to live demos and code repositories.
+## 🚀 Tech Stack
 
-## Connect With Me
+- HTML5
+- CSS3
+- JavaScript
+- Font Awesome
+- Google Fonts
 
-I'm always open to new opportunities, collaborations, or just a chat about the latest tech trends. Feel free to reach out to me through:
+---
 
-- Email: rialpabloj@hotmail.com
-- LinkedIn: www.linkedin.com/in/pablo-rial-dev
-- GitHub: PabloJulianRial
+## 📁 Project Structure
 
-Thank you for visiting my portfolio. Dive in and explore my projects!
+/
+├── index.html
+├── about.html
+├── projects.html
+├── contact.html
+├── assets/
+│ ├── css/
+│ └── images/
+
+---
+
+## 📫 Contact Me
+
+Feel free to connect with me via [LinkedIn](https://your-linkedin-profile.com) or send me an email at `your.email@example.com`.
+
+---

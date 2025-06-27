@@ -1,4 +1,8 @@
 .about-me {
+  &__desktop {
+    display: none;
+  }
+
   width: 70vw;
   margin: 0 auto;
 
@@ -7,9 +11,6 @@
     width: 200px;
     margin: 2rem auto;
     font-size: 30px;
-    &--desktop {
-      display: none;
-    }
   }
 
   &__image {
@@ -22,10 +23,6 @@
     margin-bottom: 2rem;
   }
 
-  &__desktop {
-    display: none;
-  }
-
   @media screen and (min-width: 768px) {
     &__head {
       margin: 1rem auto;
@@ -34,37 +31,36 @@
   }
 
   @media screen and (min-width: 1024px) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    &__head {
+    &__mobile {
       display: none;
-    }
-
-    &__image {
-      border-radius: 3%;
-      width: 1250px;
-      height: 350px;
-    }
-
-    &__text {
-      margin-left: 4rem;
-      font-size: 20px;
     }
 
     &__desktop {
       display: block;
-      font-size: 25px;
-      &--container {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-      }
-      margin-left: 4rem;
-      margin-bottom: 1rem;
+    }
+
+    &__desktop-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 10%; // optional – gap alternative
+    }
+
+    &__desktop-content {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__image {
+      width: 30%;
+      height: auto; // let height adjust naturally unless you want to fix it
+      border-radius: 3%;
+    }
+
+    &__text {
+      width: 60%;
+      font-size: 20px;
     }
   }
 }
