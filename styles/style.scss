@@ -1,237 +1,42 @@
-// style.scss
-// 1) Define your palette
-$primary: #260732;
-$primary2: #7c289d;
-$secondary: #007ced;
-$light-bg: #eaf5f5;
-$text-light: #e5e5e5;
-$text-dark: #000;
+@import "variables";
 
-// 2) Partials
-@import "./base";
-@import "./skills";
-@import "./portfolio";
-@import "./contact";
-@import "./footer";
+@import "base";
 
-// 3) Hero + header + nav + global
-.hero-header {
-  background: $primary;
-  width: 100%;
-  min-height: 100vh;
-}
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: $border-radius;
+  font-weight: 600;
+  border: 2px solid transparent;
+  transition: $transition;
+  cursor: pointer;
 
-.wrapper {
-  width: 1280px;
-  max-width: 95%;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-header {
-  padding: 40px 0 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.logo {
-  display: inline-flex;
-  align-items: center;
-
-  i {
-    background: $secondary;
-    color: #fff;
-    font-size: 1.5rem;
-    padding: 10px;
-    border-radius: 50%;
-    margin-right: 5px;
-  }
-  .logo-text {
-    color: #fff;
-    font-size: 24px;
-    font-weight: 500;
-  }
-}
-
-nav {
-  .togglebtn {
-    position: absolute;
-    top: 45px;
-    right: 3%;
-    width: 35px;
-    height: 35px;
-    display: none;
-    cursor: pointer;
-
-    span {
-      display: block;
-      background: $secondary;
-      height: 3px;
-      margin: 5px 0;
-      transition: transform 0.3s, opacity 0.3s;
-    }
-    &.click {
-      span {
-        &:first-child {
-          transform: rotate(-40deg);
-        }
-        &:nth-child(2) {
-          opacity: 0;
-        }
-        &:last-child {
-          transform: rotate(45deg);
-          position: absolute;
-          top: 0;
-        }
-      }
-    }
-  }
-  .navlinks {
-    list-style: none;
-    li {
-      display: inline-block;
-    }
-    li a {
-      color: $text-light;
-      margin-right: 2.5rem;
-    }
-    &.open {
-      right: 0;
+  &--primary {
+    background-color: $clr-primary;
+    color: $clr-bg-dark;
+    &:hover {
+      background-color: transparent;
+      color: $clr-primary;
+      border-color: $clr-primary;
     }
   }
 
-  @media (max-width: 930px) {
-    .togglebtn {
-      display: block;
-    }
-    .navlinks {
-      position: absolute;
-      top: 110px;
-      right: -100%;
-      width: 60%;
-      height: 100vh;
-      background: #222;
-      padding: 25px 0;
-      transition: right 0.5s;
-      box-shadow: 5px 13px 30px rgba(0, 0, 0, 0.1);
-
-      li {
-        display: block;
-        text-align: center;
-      }
-      li a {
-        display: block;
-        margin-bottom: 15px;
-      }
+  &--secondary {
+    background-color: transparent;
+    color: $clr-primary;
+    border-color: $clr-border;
+    &:hover {
+      background-color: $clr-primary;
+      color: $clr-bg-dark;
+      border-color: $clr-primary;
     }
   }
 }
 
-.container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding-top: 4rem;
+@import "navbar";
+@import "hero";
+@import "footer";
 
-  .hero-pic {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 15px solid #444;
-    box-shadow: 5px 7px 25px rgba(0, 0, 0, 0.5);
-
-    img {
-      width: 100%;
-      height: 100%;
-      transition: transform 0.5s;
-      &:hover {
-        transform: scale(1.2);
-      }
-    }
-  }
-
-  .hero-text {
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-
-    h5 {
-      color: $text-light;
-      font-size: 14px;
-      span {
-        color: $secondary;
-        font-size: 16px;
-      }
-    }
-    h1 {
-      color: $secondary;
-      font-size: 3rem;
-    }
-    p {
-      color: $text-light;
-    }
-
-    .social {
-      margin-top: 1rem;
-      i {
-        color: $text-light;
-        font-size: 18px;
-        margin-right: 10px;
-        transition: color 0.5s, transform 0.5s;
-        &:hover {
-          color: $secondary;
-          transform: rotate(360deg);
-        }
-      }
-    }
-  }
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    padding-top: 2rem;
-
-    .hero-text {
-      padding: 40px 0;
-    }
-  }
-}
-
-// CONTACT
-.contact {
-  background: $light-bg;
-  color: $text-dark;
-  width: 75vw;
-  margin: 2rem auto;
-  padding: 2rem;
-  text-align: center;
-
-  &__head {
-    font-size: 2rem;
-    color: $secondary;
-    margin-bottom: 1rem;
-  }
-}
-
-// FOOTER
-.footer {
-  background: $primary;
-  padding: 1rem 0;
-  text-align: center;
-
-  &__links {
-    a {
-      margin: 0 10px;
-      i {
-        font-size: 1.5rem;
-        color: $text-light;
-        transition: color 0.3s;
-        &:hover {
-          color: $secondary;
-        }
-      }
-    }
-  }
-}
+@import "skills";
+@import "portfolio";
+@import "contact";

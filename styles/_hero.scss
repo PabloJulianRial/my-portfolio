@@ -1,0 +1,76 @@
+.hero {
+  background: radial-gradient(circle at top left, #dde3ff, $clr-bg-light);
+
+  padding-top: 8rem;
+  padding-bottom: $space-xl;
+
+  display: grid;
+  place-items: center;
+}
+
+.hero__container {
+  display: flex;
+  align-items: center;
+  gap: $space-l;
+
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding-block: $space-l;
+  }
+}
+
+.hero__text {
+  flex: 1;
+  h1 {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    margin-block: $space-xs $space-s;
+  }
+  h5 {
+    color: $clr-text-light;
+    font-family: $font-secondary;
+    font-weight: 500;
+    font-size: 1.5rem;
+    height: 2.2rem;
+  }
+  .hero__input,
+  .typed-cursor {
+    color: $clr-primary;
+    font-weight: 500;
+  }
+  p {
+    max-width: 55ch;
+    margin-bottom: $space-m;
+    @media (max-width: 768px) {
+      margin-inline: auto;
+    }
+  }
+}
+
+.hero__socials {
+  display: flex;
+  gap: $space-m;
+  font-size: 1.5rem;
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
+
+  a {
+    color: $clr-text-light;
+    &:hover {
+      color: $clr-primary;
+    }
+  }
+}
+
+.hero__pic {
+  flex-shrink: 0;
+  img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 8px solid $clr-bg-dark;
+    box-shadow: $shadow;
+  }
+}

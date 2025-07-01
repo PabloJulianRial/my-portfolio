@@ -1,346 +1,398 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio Website</title>
+    <title>Pablo Rial | Software Developer</title>
 
     <link rel="icon" href="/assets/favico.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Prompt:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <!-- HERO -->
-    <section class="hero-header" id="about">
+    <nav class="navbar">
+      <div class="wrapper navbar__container">
+        <a href="#" class="navbar__logo" aria-label="Home"><span>PR</span></a>
+        <div class="navbar__toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="navbar__links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="hero" id="about">
       <div class="wrapper">
-        <header>
-          <div class="logo">
-            <i class="fa-solid fa-p"></i>
-            <div class="logo-text">Pablo Rial</div>
-          </div>
-          <nav>
-            <div class="togglebtn">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <ul class="navlinks">
-              <li><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#portfolio">Projects</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
-        </header>
-        <div class="container">
-          <div class="hero-pic">
-            <img src="images/main-photo.png" alt="profile pic" />
-          </div>
-          <div class="hero-text">
-            <h5>Hi I'm <span class="input">Software Developer</span></h5>
+        <div class="hero__container">
+          <div class="hero__text">
             <h1>Pablo Rial</h1>
+            <h5>I'm a <span class="hero__input"></span></h5>
             <p>
-              I’m a career-changer turned junior software developer with a
-              background in leading high-pressure kitchens and a lifelong love
-              for technology. After years of running teams and delivering
-              results in fast-paced environments, I decided to follow my passion
-              for coding and build a new path in tech. I enjoy solving problems,
-              building useful things, and learning how technology can make
-              everyday life better. I’m especially drawn to collaborative
-              projects where creativity, communication, and continuous learning
-              all come together. Whether I’m debugging code or refining a
-              recipe, I bring the same focus, curiosity, and drive to improve
-              every day. Right now, I’m looking for opportunities to grow as a
-              developer, contribute to real-world projects, and be part of a
-              supportive, forward-thinking team.
+              Career-changer with a background in leading high-pressure kitchens
+              and a lifelong love for technology. I bring focus, curiosity, and
+              a drive to improve every day, whether I’m debugging code or
+              refining a recipe. I'm excited to contribute to real-world
+              projects with a supportive, forward-thinking team.
             </p>
-            <div class="social">
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-              <a href="#"><i class="fa-solid fa-envelope"></i></a>
+            <div class="hero__socials">
+              <a href="#" aria-label="LinkedIn"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="#" aria-label="GitHub"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="#" aria-label="Email"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
             </div>
+          </div>
+          <div class="hero__pic">
+            <img
+              src="images/main-photo.png"
+              alt="A profile picture of Pablo Rial"
+            />
           </div>
         </div>
       </div>
-    </section>
+    </header>
 
-    <!-- SKILLS -->
-    <section class="skills" id="skills">
-      <div class="skills__head">Technical Skills</div>
-      <div class="skills__text">
-        These are some of the tech skills I have on my tool belt, although one
-        of the most important skills I've gained during my training as a
-        developer is the ability to learn new languages and frameworks in a
-        short space of time using the most relevant and up-to-date documentation
-        available.
-      </div>
-      <div class="skills__grid">
-        <!-- repeat your .skills__item blocks here -->
-        <div class="skills__item">
-                <img src="./images/Spring.png" class="skills__item--logo"></img>
-                <p class="skills__item--name">Spring Boot</p>
-
+    <main>
+      <section class="skills" id="skills">
+        <div class="wrapper">
+          <h2 class="skills__head">Technical Skills</h2>
+          <p class="skills__text">
+            These are some of the skills in my toolbelt. My favorite skill is
+            learning new things quickly and effectively.
+          </p>
+          <div class="skills__grid">
+            <div class="skills__item">
+              <img
+                src="./images/Spring.png"
+                class="skills__item--logo"
+                alt="Spring Boot Logo"
+              />
+              <p class="skills__item--name">Spring Boot</p>
             </div>
             <div class="skills__item">
-                <img src="./images/React.png" class="skills__item--logo"></img>
-                <p class="skills__item--name">React</p>
-
+              <img
+                src="./images/React.png"
+                class="skills__item--logo"
+                alt="React Logo"
+              />
+              <p class="skills__item--name">React</p>
             </div>
             <div class="skills__item">
-                <img src="./images/JS.png" class="skills__item--logo"></img>
-                <p class="skills__item--name">JavaScript</p>
-
+              <img
+                src="./images/JS.png"
+                class="skills__item--logo"
+                alt="JavaScript Logo"
+              />
+              <p class="skills__item--name">JavaScript</p>
             </div>
             <div class="skills__item">
-                <img src="./images/JavaScript.png" class="skills__item--logo"></img>
-                <p class="skills__item--name">Java</p>
-
+              <img
+                src="./images/JavaScript.png"
+                class="skills__item--logo"
+                alt="Java Logo"
+              />
+              <p class="skills__item--name">Java</p>
             </div>
             <div class="skills__item">
-                <img src="./images/BEM.png" class="skills__item--logo"></img>
-                <p class="skills__item--name">BEM</p>
-
+              <img
+                src="./images/SCSS.png"
+                class="skills__item--logo"
+                alt="SCSS Logo"
+              />
+              <p class="skills__item--name">SCSS</p>
             </div>
             <div class="skills__item">
-                <img src="./images/SCSS.png" class="skills__item--logo"></img>
-                <p class="skills__item--name">SCSS</p>
-
+              <img
+                src="./images/HTML5.png"
+                class="skills__item--logo"
+                alt="HTML5 Logo"
+              />
+              <p class="skills__item--name">HTML5</p>
             </div>
             <div class="skills__item">
-                <img src="./images/HTML5.png" class="skills__item--logo"></img>
-                <p class="skills__item--name">HTML5</p>
-
+              <img
+                src="./images/Git.png"
+                class="skills__item--logo"
+                alt="Git Logo"
+              />
+              <p class="skills__item--name">Git</p>
             </div>
             <div class="skills__item">
-                <img src="./images/Git.png" class="skills__item--logo"></img>
-                <p class="skills__item--name">Git</p>
-
+              <img
+                src="./images/CSS3.png"
+                class="skills__item--logo"
+                alt="CSS3 Logo"
+              />
+              <p class="skills__item--name">CSS3</p>
             </div>
-            <div class="skills__item">
-                <img src="./images/CSS3.png" class="skills__item--logo"></img>
-                <p class="skills__item--name">CSS3</p>
+          </div>
+        </div>
+      </section>
 
+      <section class="portfolio" id="portfolio">
+        <div class="wrapper">
+          <h2 class="portfolio__head">My Projects</h2>
+          <div class="portfolio__grid">
+            <div class="project-card">
+              <div class="project-card__image">
+                <img src="./images/calculator.png" alt="Calculator preview" />
+              </div>
+              <div class="project-card__content">
+                <div class="project-card__tags">
+                  <span class="project-card__tag">TypeScript</span>
+                </div>
+                <h3 class="project-card__title">Browser Calculator</h3>
+                <p class="project-card__text">
+                  A browser-based calculator app using modern JavaScript and DOM
+                  manipulation.
+                </p>
+                <div class="project-card__links">
+                  <a
+                    href="https://github.com/PabloJulianRial/calculator-waiheke"
+                    class="btn btn--secondary"
+                    >Code</a
+                  >
+                  <a
+                    href="https://pablojulianrial.github.io/calculator-waiheke/"
+                    class="btn btn--primary"
+                    >Preview</a
+                  >
+                </div>
+              </div>
             </div>
-        <!-- …other items… -->
-      </div>
-    </section>
+            <div class="project-card">
+              <div class="project-card__image">
+                <img src="./images/punkipa.png" alt="Punk-IPA preview" />
+              </div>
+              <div class="project-card__content">
+                <div class="project-card__tags">
+                  <span class="project-card__tag">TypeScript</span>
+                  <span class="project-card__tag">React</span>
+                </div>
+                <h3 class="project-card__title">Punk IPA</h3>
+                <p class="project-card__text">
+                  A React application that pulls data from an external public
+                  API and presents it in a dashboard or multi-page layout.
+                </p>
+                <div class="project-card__links">
+                  <a
+                    href="https://github.com/PabloJulianRial/Punk-API"
+                    class="btn btn--secondary"
+                    >Code</a
+                  >
+                  <a
+                    href="https://pablojulianrial.github.io/Punk-API/"
+                    class="btn btn--primary"
+                    >Preview</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-card__image">
+                <img src="./images/Guess-what.png" alt="Guess-what preview" />
+              </div>
+              <div class="project-card__content">
+                <div class="project-card__tags">
+                  <span class="project-card__tag">TypeScript</span>
+                  <span class="project-card__tag">React</span>
+                  <span class="project-card__tag">MongoDB</span>
+                </div>
+                <h3 class="project-card__title">Guess What?</h3>
+                <p class="project-card__text">
+                  A multiplayer game mimicking the classic Guess Who but with
+                  aliens instead of people.
+                </p>
+                <div class="project-card__links">
+                  <a
+                    href="https://github.com/PabloJulianRial/Guess-What-Aliens"
+                    class="btn btn--secondary"
+                    >Code</a
+                  >
+                  <a
+                    href="https://guess-what-gitkermit.netlify.app/"
+                    class="btn btn--primary"
+                    >Preview</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-card__image">
+                <img
+                  src="./images/recipe-finder.png"
+                  alt="Recipe finder preview"
+                />
+              </div>
+              <div class="project-card__content">
+                <div class="project-card__tags">
+                  <span class="project-card__tag">TypeScript</span>
+                  <span class="project-card__tag">Java</span>
+                  <span class="project-card__tag">Spring</span>
+                </div>
+                <h3 class="project-card__title">Recipe Finder</h3>
+                <p class="project-card__text">
+                  A Spring Boot API served from a MySQL database and a React
+                  application.
+                </p>
+                <div class="project-card__links">
+                  <a
+                    href="https://github.com/PabloJulianRial/full-stack-project"
+                    class="btn btn--secondary"
+                    >Code</a
+                  >
+                  <a
+                    href="https://github.com/PabloJulianRial/full-stack-project"
+                    class="btn btn--primary"
+                    >Preview</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-card__image">
+                <img
+                  src="./images/calculator.png"
+                  alt="Java-Casino-Games preview"
+                />
+              </div>
+              <div class="project-card__content">
+                <div class="project-card__tags">
+                  <span class="project-card__tag">Java</span>
+                </div>
+                <h3 class="project-card__title">Java Card Games</h3>
+                <p class="project-card__text">
+                  A Java Object Oriented application making use of multiple
+                  models and classes to run complex game logic from the command
+                  line.
+                </p>
+                <div class="project-card__links">
+                  <a
+                    href="https://github.com/PabloJulianRial/card-games"
+                    class="btn btn--secondary"
+                    >Code</a
+                  >
+                  <a
+                    href="https://pablojulianrial.github.io/Java-casino/casino.html"
+                    class="btn btn--primary"
+                    >Preview</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-card__image">
+                <img src="./images/wov.png" alt="Way of the viking preview" />
+              </div>
+              <div class="project-card__content">
+                <div class="project-card__tags">
+                  <span class="project-card__tag">TypeScript</span>
+                  <span class="project-card__tag">React</span>
+                </div>
+                <h3 class="project-card__title">Way Of The Viking</h3>
+                <p class="project-card__text">
+                  A real-life MVP for a development project, delivered as a
+                  Scrum team to a client who will use it for future development.
+                </p>
+                <div class="project-card__links">
+                  <a
+                    href="https://github.com/PabloJulianRial/wov-client-project"
+                    class="btn btn--secondary"
+                    >Code</a
+                  >
+                  <a
+                    href="https://wov-client-project-66242.web.app/"
+                    class="btn btn--primary"
+                    >Preview</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <!-- PORTFOLIO -->
-    <div class="portfolio__head">My Projects</div>
-    <section class="portfolio" id="portfolio">
-      <div class="portfolio__project portfolio__project--1">
-        <div class="portfolio__project__head">Calculator</div>
-        <div class="portfolio__project__image">
-          <img src="./images/calculator.png" alt="Calculator preview" />
+      <section class="contact" id="contact">
+        <div class="wrapper">
+          <h2 class="contact__head">Let's Connect!</h2>
+          <p>
+            Have a question or a project in mind? My inbox is always open. Let's
+            have a chat!
+          </p>
+          <a href="mailto:rialpabloj@hotmail.com" class="btn btn--primary"
+            >Say Hello</a
+          >
         </div>
-        <div class="portfolio__project__info">
-          <div class="portfolio__project__language">TypeScript</div>
-          <div class="portfolio__project__text">
-            A browser-based calculator app using modern JavaScript programming
-            techniques and DOM manipulation.
-          </div>
-          <div class="portfolio__project__links">
-            <a
-              class="portfolio__project__links--code"
-              href="https://github.com/PabloJulianRial/calculator-waiheke"
-              >Code</a
-            >
-            <a
-              class="portfolio__project__links--preview"
-              href="https://pablojulianrial.github.io/calculator-waiheke/"
-              >Preview</a
-            >
-          </div>
-        </div>
-      </div>
-      <div class="portfolio__project portfolio__project--1">
-        <div class="portfolio__project__head">Calculator</div>
-        <div class="portfolio__project__image">
-          <img src="./images/calculator.png" alt="Calculator preview" />
-        </div>
-        <div class="portfolio__project__info">
-          <div class="portfolio__project__language">TypeScript</div>
-          <div class="portfolio__project__text">
-            A browser-based calculator app using modern JavaScript programming
-            techniques and DOM manipulation.
-          </div>
-          <div class="portfolio__project__links">
-            <a
-              class="portfolio__project__links--code"
-              href="https://github.com/PabloJulianRial/calculator-waiheke"
-              >Code</a
-            >
-            <a
-              class="portfolio__project__links--preview"
-              href="https://pablojulianrial.github.io/calculator-waiheke/"
-              >Preview</a
-            >
-          </div>
-        </div>
-      </div>
-      <div class="portfolio__project portfolio__project--1">
-        <div class="portfolio__project__head">Calculator</div>
-        <div class="portfolio__project__image">
-          <img src="./images/calculator.png" alt="Calculator preview" />
-        </div>
-        <div class="portfolio__project__info">
-          <div class="portfolio__project__language">TypeScript</div>
-          <div class="portfolio__project__text">
-            A browser-based calculator app using modern JavaScript programming
-            techniques and DOM manipulation.
-          </div>
-          <div class="portfolio__project__links">
-            <a
-              class="portfolio__project__links--code"
-              href="https://github.com/PabloJulianRial/calculator-waiheke"
-              >Code</a
-            >
-            <a
-              class="portfolio__project__links--preview"
-              href="https://pablojulianrial.github.io/calculator-waiheke/"
-              >Preview</a
-            >
-          </div>
-        </div>
-      </div>
-      <div class="portfolio__project portfolio__project--1">
-        <div class="portfolio__project__head">Calculator</div>
-        <div class="portfolio__project__image">
-          <img src="./images/calculator.png" alt="Calculator preview" />
-        </div>
-        <div class="portfolio__project__info">
-          <div class="portfolio__project__language">TypeScript</div>
-          <div class="portfolio__project__text">
-            A browser-based calculator app using modern JavaScript programming
-            techniques and DOM manipulation.
-          </div>
-          <div class="portfolio__project__links">
-            <a
-              class="portfolio__project__links--code"
-              href="https://github.com/PabloJulianRial/calculator-waiheke"
-              >Code</a
-            >
-            <a
-              class="portfolio__project__links--preview"
-              href="https://pablojulianrial.github.io/calculator-waiheke/"
-              >Preview</a
-            >
-          </div>
-        </div>
-      </div>
-      <div class="portfolio__project portfolio__project--1">
-        <div class="portfolio__project__head">Calculator</div>
-        <div class="portfolio__project__image">
-          <img src="./images/calculator.png" alt="Calculator preview" />
-        </div>
-        <div class="portfolio__project__info">
-          <div class="portfolio__project__language">TypeScript</div>
-          <div class="portfolio__project__text">
-            A browser-based calculator app using modern JavaScript programming
-            techniques and DOM manipulation.
-          </div>
-          <div class="portfolio__project__links">
-            <a
-              class="portfolio__project__links--code"
-              href="https://github.com/PabloJulianRial/calculator-waiheke"
-              >Code</a
-            >
-            <a
-              class="portfolio__project__links--preview"
-              href="https://pablojulianrial.github.io/calculator-waiheke/"
-              >Preview</a
-            >
-          </div>
-        </div>
-      </div>
-      <div class="portfolio__project portfolio__project--1">
-        <div class="portfolio__project__head">Calculator</div>
-        <div class="portfolio__project__image">
-          <img src="./images/calculator.png" alt="Calculator preview" />
-        </div>
-        <div class="portfolio__project__info">
-          <div class="portfolio__project__language">TypeScript</div>
-          <div class="portfolio__project__text">
-            A browser-based calculator app using modern JavaScript programming
-            techniques and DOM manipulation.
-          </div>
-          <div class="portfolio__project__links">
-            <a
-              class="portfolio__project__links--code"
-              href="https://github.com/PabloJulianRial/calculator-waiheke"
-              >Code</a
-            >
-            <a
-              class="portfolio__project__links--preview"
-              href="https://pablojulianrial.github.io/calculator-waiheke/"
-              >Preview</a
-            >
-          </div>
-        </div>
-      </div>
-      <!-- …repeat projects 2–6… -->
-    </section>
+      </section>
+    </main>
 
-    <!-- CONTACT -->
-    <section class="contact" id="contact">
-      <h3 class="contact__head">Contact me</h3>
-      <p>
-        If you have any questions at all, want a friendly chat, or have a job
-        proposition, please use any of the links below 👇
-      </p>
-    </section>
-
-    <!-- FOOTER -->
     <footer class="footer">
-      <div class="footer__links">
-        <a href="https://www.linkedin.com/in/pablo-rial-dev/" target="_blank"
-          ><i class="fa-brands fa-linkedin"></i
-        ></a>
-        <a href="https://github.com/PabloJulianRial" target="_blank"
-          ><i class="fa-brands fa-github"></i
-        ></a>
-        <a href="mailto:rialpabloj@hotmail.com" target="_blank"
-          ><i class="fa-solid fa-envelope"></i
-        ></a>
+      <div class="wrapper">
+        <div class="footer__links">
+          <a
+            href="https://www.linkedin.com/in/pablo-rial-dev/"
+            target="_blank"
+            aria-label="LinkedIn"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a
+            href="https://github.com/PabloJulianRial"
+            target="_blank"
+            aria-label="GitHub"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="mailto:rialpabloj@hotmail.com"
+            target="_blank"
+            aria-label="Email"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+        </div>
       </div>
     </footer>
 
-    <!-- SCRIPTS -->
+    <script
+      src="https://kit.fontawesome.com/564b9e19e0.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
     <script>
-      const togglebtn = document.querySelector(".togglebtn");
-      const nav = document.querySelector(".navlinks");
+      const togglebtn = document.querySelector(".navbar__toggle");
+      const nav = document.querySelector(".navbar__links");
       togglebtn.addEventListener("click", () => {
-        togglebtn.classList.toggle("click");
         nav.classList.toggle("open");
+        togglebtn.classList.toggle("open");
       });
-      new Typed(".input", {
+
+      new Typed(".hero__input", {
         strings: [
-          "Frontend Developer",
-          "Backend developer",
-          "Web Developer",
-          "Java Developer",
-          "Spring boot Developer",
-          "Typescript Developer",
-          "React Developer",
-          "Node.js Developer",
+          "Software Developer.",
+          "Java Developer.",
+          "Frontend Developer.",
+          "Backend Developer.",
+          "React Developer.",
+          "TypeScript Developer.",
         ],
         typeSpeed: 70,
         backSpeed: 55,
         loop: true,
       });
     </script>
-    <script
-      src="https://kit.fontawesome.com/564b9e19e0.js"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
