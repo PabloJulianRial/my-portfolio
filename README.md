@@ -13,6 +13,9 @@ I'm passionate about building practical, user-focused applications and continuou
 ## 🚀 Tech Stack
 
 - HTML5
+- SCSS
+- BEM
+- GIT
 - CSS3
 - JavaScript
 - Font Awesome
