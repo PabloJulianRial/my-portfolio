@@ -1,0 +1,17 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "Welcome to my portfolio! This is a simple, clean website that introduces me as an aspiring web developer. It includes links to:",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^7.1.4"
+  }
+}
